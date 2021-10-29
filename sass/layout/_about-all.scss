@@ -93,8 +93,12 @@
 // ABOUT111-ALLLL
 
 .about-alll {
+  
+  @media screen and (max-width: 1199px){
+  display: none;
   background-color: #ffffff;
   padding-bottom: 94px;
+  }
 }
 .about-alll-1 {
   color: #212121;
