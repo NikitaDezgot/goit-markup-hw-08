@@ -1,0 +1,51 @@
+.social-foot {
+  display: block;
+  padding-top: 72px;
+  padding-bottom: 100px;
+  align-items: baseline;
+  margin-left: 70px;
+}
+
+.social-logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.foot-social-link {
+  @extend %align-items;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
+}
+
+.foot-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .foot-social-link:hover &,
+  .foot-social-link:focus & {
+    fill: #ffffff;
+  }
+}

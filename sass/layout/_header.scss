@@ -1,0 +1,153 @@
+.conteiner-header-1 {
+  border: 1px solid #eeeeee;
+  width: auto;
+}
+.header {
+  background-color: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: #2196f3;
+  }
+}
+
+.header-conteiner {
+  @extend %align-items;
+}
+
+.header-logo {
+  @extend %align-items;
+}
+.header-top-logo {
+  margin-right: 93px;
+}
+.header-list {
+  @extend %align-items;
+}
+.header-top-adr {
+  margin-left: auto;
+  @extend %align-items;
+}
+.header-tel {
+  margin-right: 50px;
+}
+.header-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-top-logo {
+  color: #2196f3;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-top-logo {
+  list-style: none;
+}
+
+.header-top-logo2 {
+  color: black;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  list-style: none;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #212121;
+  position: relative;
+  padding: 40px 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: #2196f3;
+  }
+}
+
+.current {
+  color: #2196f3;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    display: block;
+  }
+}
+
+.header-top-adr {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.header-mail-link {
+  text-decoration: none;
+  color: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.header-tel-link {
+  text-decoration: none;
+  color: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+.icon-emeil {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-telephone {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
