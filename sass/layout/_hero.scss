@@ -1,22 +1,91 @@
 .hero {
   background-color: rgba(47, 48, 58, 1);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+     padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px){
+     padding-top: 200px;
+     padding-bottom: 200px;
+    }
+  
 }
 .hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero-bac.jpg);
-  height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    url(../images/hero-bac-mob-1x.jpg);
+    // height: 600px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bac-mob-2x.jpg);
+}
+      @media screen and (min-width: 768px){
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bac-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bac-tab-2x.jpg);
+    }
+}
+  @media screen and (min-width: 1200px){
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bac-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bac-2x.jpg);
+    }
+}
 }
 
 .hero-logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px){
+    font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px){
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -26,6 +95,10 @@
   padding-left: 237px;
   align-items: center;
   margin-bottom: 30px;
+  }
+  }
+
+
 }
 .hero-button {
   width: 200px;
