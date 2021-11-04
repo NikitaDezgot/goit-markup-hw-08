@@ -10,7 +10,7 @@ h6 {
 
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 img {
@@ -63,7 +63,7 @@ button {
   color: #757575;
 }
 
-.header-conteiner, .header-logo, .header-list, .header-top-adr, .button-modal-list, .checkbox-text span, .img1-text, .social-list__link, .foot-social-link {
+.header-conteiner, .header-logo, .header-list, .button-modal-list, .checkbox-text span, .img1-text, .social-list__link, .foot-social-link {
   display: flex;
   align-items: center;
 }
@@ -80,6 +80,13 @@ button {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header:focus, .header:hover {
@@ -143,7 +150,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .header-link {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 }
 
@@ -163,7 +170,14 @@ button {
   }
 }
 
-.header-tel {
+@media screen and (min-width: 1200px) {
+  .header-top-adr {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-contact {
   margin-right: 50px;
 }
 
@@ -410,14 +424,10 @@ button {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
-@media screen and (min-width: 738px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-color: #2f303a;
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -490,7 +500,6 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 30px;
   }
 }
 
@@ -504,7 +513,6 @@ button {
     padding-right: 237px;
     padding-left: 237px;
     align-items: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -904,13 +912,9 @@ button {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   bottom: 0;
   right: 0;
-}
-
-.img1-list:hover::before {
-  opacity: 1;
 }
 
 .img1-text {
@@ -926,15 +930,8 @@ button {
   position: absolute;
   height: 70px;
   width: 100%;
-  opacity: 0;
-  bottom: 0;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.img1-text:hover, .img1-text:focus {
   opacity: 1;
+  bottom: 0;
 }
 
 .our-team {
