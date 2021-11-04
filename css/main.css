@@ -947,7 +947,7 @@ button {
 .our-team {
   background-color: #f5f4fa;
   padding-top: 30px;
-  padding-bottom: 3px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1120,12 +1120,12 @@ button {
 
 .social-partners-item {
   margin: 15px;
-  flex-basis: calc((100% - 60px) / 2);
+  width: calc((100% - 2 * 30px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .social-partners-item {
-    flex-basis: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -1143,7 +1143,6 @@ button {
 
 .social-partners-link {
   display: flex;
-  width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -1151,7 +1150,6 @@ button {
   border: 1px solid #afb1b8;
   background: #ffffff;
   border-radius: 4px;
-  margin-bottom: 30px;
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1163,8 +1161,6 @@ button {
 }
 
 .social-partners-icon {
-  width: 106px;
-  height: 60px;
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
@@ -1317,6 +1313,12 @@ button {
 
 .social-list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    margin-bottom: 30px;
+  }
 }
 
 .foot-social-icon {

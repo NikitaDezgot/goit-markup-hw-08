@@ -33,9 +33,9 @@
 
 .social-partners-item{
   margin: 15px;
-  flex-basis: calc((100% - 60px) / 2);
+  width: calc((100% - 2 * 30px) / 2);
   @media screen and (min-width: 768px){
-    flex-basis: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 3);
   }
   @media screen and (min-width: 1200px){
     flex-basis: calc((100% - 180px) / 6);
@@ -49,7 +49,7 @@
 
 .social-partners-link {
   display: flex;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
   border: 1px solid #afb1b8;
   background: #ffffff;
   border-radius: 4px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   transition-property: fill, border;
   transition-duration: 250ms;
@@ -70,8 +70,8 @@
   }
 }
 .social-partners-icon {
-  width: 106px;
-  height: 60px;
+  // width: 106px;
+  // height: 60px;
   fill: #afb1b8;
 
   transition-property: fill;
