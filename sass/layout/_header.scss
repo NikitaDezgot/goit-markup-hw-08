@@ -24,6 +24,7 @@
 
 .header-conteiner {
   @extend %align-items;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -74,7 +75,7 @@
   text-decoration: none;
   color: #212121;
   position: relative;
-  padding: 55px 0;
+  padding: 40px 0;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -110,7 +111,10 @@
 }
 
 .header-contact {
+  margin-left: auto;
+  @media screen and (min-width: 1200px){
   margin-right: 50px;
+  }
 }
 
 .header-mail-link {

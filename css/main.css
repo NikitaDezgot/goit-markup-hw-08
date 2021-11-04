@@ -93,6 +93,10 @@ button {
   border-color: #2196f3;
 }
 
+.header-conteiner {
+  justify-content: space-between;
+}
+
 .header-top-logo {
   color: #2196f3;
   font-family: Raleway, cursive;
@@ -138,7 +142,7 @@ button {
     text-decoration: none;
     color: #212121;
     position: relative;
-    padding: 55px 0;
+    padding: 40px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -178,7 +182,13 @@ button {
 }
 
 .header-contact {
-  margin-right: 50px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    margin-right: 50px;
+  }
 }
 
 .header-mail-link {
