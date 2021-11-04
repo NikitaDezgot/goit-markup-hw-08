@@ -946,14 +946,14 @@ button {
 
 .our-team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 3px;
 }
 
 @media screen and (min-width: 1200px) {
   .our-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
@@ -1039,6 +1039,12 @@ button {
   list-style: none;
   margin-bottom: 30px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .social-list__item {
+    margin-bottom: 0;
+  }
 }
 
 .social-list__link {
