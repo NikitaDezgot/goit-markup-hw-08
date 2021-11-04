@@ -1,5 +1,5 @@
 .footer-end {
-
+  text-align: center;
   @media screen and (min-width: 1200px){
   display: block;
   padding-top: 72px;
@@ -27,6 +27,10 @@
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+
+  @media screen and (min-width: 1200px){
+    text-align: start;
+  }
 }
 .foter-email {
  
@@ -63,6 +67,8 @@
   }
 }
 .foot-icon-button {
+  width: 200px;
+  height: 50px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -72,10 +78,11 @@
   background-color: #2196f3;
   color: #ffffff;
   border: none;
-  align-items: center;
-  text-align: center;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  // display: flex;
+  
   
   @media screen and (min-width: 1200px){
   margin-left: 12px;

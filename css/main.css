@@ -880,6 +880,11 @@ button {
 @media screen and (max-width: 1199px) {
   .about-alll {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-alll {
     background-color: #ffffff;
     padding-bottom: 94px;
   }
@@ -1181,11 +1186,20 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .head-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .head-conteiner {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    justify-content: start;
   }
 }
 
@@ -1200,6 +1214,12 @@ button {
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner-logo {
+    text-align: start;
+  }
 }
 
 .fot-adres:not(:last-child) {
@@ -1236,6 +1256,12 @@ button {
   list-style: none;
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .foot-adres {
+    text-align: start;
+  }
 }
 
 .foot-adres-1 {
@@ -1295,6 +1321,12 @@ button {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-logo {
+    text-align: start;
+  }
+}
+
 .foot-social-link {
   justify-content: center;
   width: 44px;
@@ -1335,6 +1367,10 @@ button {
   fill: #ffffff;
 }
 
+.footer-end {
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-end {
     display: block;
@@ -1364,6 +1400,12 @@ button {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .foter-end-logo {
+    text-align: start;
+  }
 }
 
 .foter-email {
@@ -1400,6 +1442,8 @@ button {
 }
 
 .foot-icon-button {
+  width: 200px;
+  height: 50px;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -1409,10 +1453,9 @@ button {
   background-color: #2196f3;
   color: #ffffff;
   border: none;
-  align-items: center;
-  text-align: center;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   transition-property: box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
