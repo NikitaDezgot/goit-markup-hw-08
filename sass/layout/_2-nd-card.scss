@@ -3,9 +3,11 @@
   overflow: hidden;
 }
 .portfolio-card {
-  display: block;
+  // display: block;
   text-decoration: none;
   cursor: pointer;
+  width: auto;
+  height: auto;
 
   transition-property: box-shadow, cursor;
   transition-duration: 250ms;
@@ -46,6 +48,15 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.portfolio-list{
+  @media screen and (max-width: 768px){
+  display: list-item;
+  width: 450px;
+  height: 294px;
+  padding: 77px 24px;
+  align-items: flex-start;
+  }
 }
 
 .conteiner-card {
