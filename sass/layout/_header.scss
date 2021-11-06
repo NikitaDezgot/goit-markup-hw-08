@@ -75,7 +75,7 @@
   text-decoration: none;
   color: #212121;
   position: relative;
-  padding: 40px 0;
+  padding: 45px 0;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -107,19 +107,27 @@
   @media screen and (min-width: 1200px){
   display: flex;
   align-items: center;
+
 }
 }
 
 .header-contact {
-  margin-left: auto;
+  // margin-left: auto;
   @media screen and (min-width: 1200px){
   margin-right: 50px;
   }
 }
 
 .header-mail-link {
+  @media screen and (min-width: 768px){
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  }
+  @media screen and (min-width: 1200px){
   text-decoration: none;
   color: #757575;
+  margin-bottom: 0;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -129,6 +137,7 @@
   &:focus {
     color: #2196f3;
   }
+}
 }
 
 .header-tel-link {

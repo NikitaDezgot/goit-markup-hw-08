@@ -142,7 +142,7 @@ button {
     text-decoration: none;
     color: #212121;
     position: relative;
-    padding: 40px 0;
+    padding: 45px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,26 +181,32 @@ button {
   }
 }
 
-.header-contact {
-  margin-left: auto;
-}
-
 @media screen and (min-width: 1200px) {
   .header-contact {
     margin-right: 50px;
   }
 }
 
-.header-mail-link {
-  text-decoration: none;
-  color: #757575;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .header-mail-link {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
 }
 
-.header-mail-link:hover, .header-mail-link:focus {
-  color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .header-mail-link {
+    text-decoration: none;
+    color: #757575;
+    margin-bottom: 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-mail-link:hover, .header-mail-link:focus {
+    color: #2196f3;
+  }
 }
 
 .header-tel-link {
@@ -504,8 +510,8 @@ button {
   .hero-logo {
     font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 44px;
+    line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -555,6 +561,7 @@ button {
   top: 0;
   left: 0%;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
   transition-property: opacity, pointer-events;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -580,7 +587,22 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 480px) and (max-width: 1600px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
@@ -911,12 +933,6 @@ button {
 
 .img1-list {
   position: relative;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.img1-list:hover .img1-text {
   opacity: 1;
 }
 
@@ -1644,6 +1660,7 @@ button {
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
 }
 
 .portfolio-text {

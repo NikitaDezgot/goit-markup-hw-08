@@ -120,14 +120,15 @@
 }
 .img1-list {
   position: relative;
+  opacity: 1;
 
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: opacity;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover .img1-text {
-    opacity: 1;
-  }
+  // &:hover .img1-text {
+  //   opacity: 1;
+  // }
   &::before {
     display: inline-block;
     content: "";
