@@ -198,7 +198,16 @@
             <ul class="about-alll-img">
                 <li class="about-alll-img__img1">
                 <div class="img1-list">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/img-1.jpg 1x,
+                        ./images/img-1-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                       />
                 <img src="./images/img-1.jpg" alt="набираем в ручную" width="370" height="294">
+                </picture>
                 <p class="img1-text">
                     Десктопные приложения
                 </p>
@@ -206,7 +215,17 @@
                 </li>
                 <li class="about-alll-img__img1">
                 <div class="img1-list">
-                <img src="./images/img-2.jpg" alt="набираем c телефона" width="370" height="294">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/img-2.jpg 1x,
+                        ./images/img-2-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                       />
+                       <img src="./images/img-2.jpg" alt="набираем c телефона" width="370" height="294">
+                </picture>
+                
                 <p class="img1-text">
                     Мобильные приложения
                 </p>
@@ -214,7 +233,17 @@
                 </li>
                 <li class="about-alll-img__img1"> 
                 <div class="img1-list">
-                <img src="./images/img-3.jpg" alt="играем на планшете" width="370" height="294">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/img-3.jpg 1x,
+                        ./images/img-3-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                       />
+                       <img src="./images/img-3.jpg" alt="играем на планшете" width="370" height="294">
+                </picture>
+                
                 <p class="img1-text">
                     Дизайнерские решения
                 </p>
@@ -230,7 +259,31 @@
             </h2>
             <ul class="our-team-list">
                 <li class="our-team-list__team-img">
-                    <img src="./images/team-1.jpg" alt="игорь" width="270" height="260">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/our-team1.jpg 1x,
+                        ./images/our-team1-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-tab1-1х.jpg 1x,
+                        ./images/our-team-tab1-2х.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-mob1.jpg 1x,
+                        ./images/our-team-mob1-2х.jpg 2x
+                        "
+                        media="(min-width: 480px)"
+                        />
+                        <img src="./images/our-team1.jpg" alt="игорь" width="270" height="260">
+                    </picture>
+                    
                     <h3 class="our-team-list__team-name">Игорь Демьяненко</h3>
                     <p lang="en" class="our-team-list__team-work">Product Designer</p>
                     <ul class="our-team-list-item social-list">
@@ -264,7 +317,31 @@
                           </li>
                     </ul>
                 <li class="our-team-list__team-img">
-                    <img src="./images/team-2.jpg" alt="ольга" width="270" height="260">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/our-team2.jpg 1x,
+                        ./images/our-team2-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-tab2-1х.jpg 1x,
+                        ./images/our-team-tab2-2х.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-mob2-1х.jpg 1x,
+                        ./images/our-team-mob2-2х.jpg 2x
+                        "
+                        media="(min-width: 480px)"
+                        />
+                        <img src="./images/our-team2.jpg" alt="ольга" width="270" height="260">
+                    </picture>
+                    
                     <h3 class="our-team-list__team-name">Ольга Репина</h3>
                     <p lang="en" class="our-team-list__team-work">Frontend Developer</p>
                     <ul class="our-team-list-item social-list">
@@ -300,7 +377,31 @@
                      </ul>
                 </li>
                 <li class="our-team-list__team-img">
-                    <img src="./images/team-3.jpg" alt="николай" width="270" height="260">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/our-team3.jpg 1x,
+                        ./images/our-team3-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-tab3-1х.jpg 1x,
+                        ./images/our-team-tab3-2х.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-mob3-1х.jpg 1x,
+                        ./images/our-team-mob3-2х.jpg 2x
+                        "
+                        media="(min-width: 480px)"
+                        />
+                        <img src="./images/our-team3.jpg" alt="николай" width="270" height="260">
+                    </picture>
+                    
                     <h3 class="our-team-list__team-name">Николай Тарасов</h3>
                     <p lang="en" class="our-team-list__team-work">Marketing</p>
                     <ul class="our-team-list-item social-list">
@@ -336,7 +437,31 @@
                     </ul>
                 </li>
                 <li class="our-team-list__team-img">
-                    <img src="./images/team-4.jpg" alt="михаил" width="270" height="260">
+                    <picture>
+                        <source 
+                        srcset="
+                        ./images/our-team4.jpg 1x,
+                        ./images/our-team4-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-tab4-1х.jpg 1x,
+                        ./images/our-team-tab4-2х.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        />
+                        <source 
+                        srcset="
+                        ./images/our-team-mob4-1х.jpg 1x,
+                        ./images/our-team-mob4-2х.jpg 2x
+                        "
+                        media="(min-width: 480px)"
+                        />
+                        <img src="./images/our-team4.jpg" alt="михаил" width="270" height="260">
+                    </picture>
+                    
                     <h3 class="our-team-list__team-name">Михаил Ермаков</h3>
                     <p lang="en" class="our-team-list__team-work">UI Designer</p>
                     <ul class="our-team-list-item social-list">
@@ -380,42 +505,42 @@
                 <ul class="social-partners-list">
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo1"></use>
                             </svg>
                         </a>
                     </li>  
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-partners-item">
                         <a href="" class="social-partners-link">
-                            <svg class="social-partners-icon" width="106" hight="60">
+                            <svg class="social-partners-icon">
                                 <use href="./images/sprite.svg#icon-Logo6"></use>
                             </svg>
                         </a>
