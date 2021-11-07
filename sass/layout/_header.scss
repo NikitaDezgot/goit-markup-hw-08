@@ -23,8 +23,20 @@
 }
 
 .header-conteiner {
-  @extend %align-items;
-  justify-content: space-between;
+  @media screen and (min-width: 768px){
+    display: flex;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+  }
+  // @extend %align-items;
+  // justify-content: space-between;
+  
 }
 
 .header-logo {
@@ -107,7 +119,6 @@
   @media screen and (min-width: 1200px){
   display: flex;
   align-items: center;
-
 }
 }
 
@@ -122,7 +133,7 @@
   @media screen and (min-width: 768px){
   display: block;
   margin-bottom: 10px;
-  margin-left: auto;
+  // margin-left: auto;
   color: #757575;
   text-decoration: none;
 
