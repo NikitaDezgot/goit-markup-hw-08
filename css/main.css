@@ -1630,6 +1630,7 @@ button {
 }
 
 .portfolio-card {
+  display: block;
   text-decoration: none;
   cursor: pointer;
   width: auto;
@@ -1664,10 +1665,21 @@ button {
   opacity: 0;
   height: 100%;
   width: 100%;
-  padding: 63px 24px;
   transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-card-text {
+    padding: 20px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-card-text {
+    padding: 63px 24px;
+  }
 }
 
 .conteiner-card {

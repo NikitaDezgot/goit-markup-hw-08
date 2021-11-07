@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 .portfolio-card {
-  // display: block;
+  display: block;
   text-decoration: none;
   cursor: pointer;
   width: auto;
@@ -42,8 +42,12 @@
   opacity: 0;
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 480px){
+  padding: 20px 24px;
+}
+@media screen and (min-width: 480px){
   padding: 63px 24px;
-
+}
   transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
