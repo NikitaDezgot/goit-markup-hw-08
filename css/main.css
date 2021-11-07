@@ -63,7 +63,7 @@ button {
   color: #757575;
 }
 
-.header-logo, .header-list, .button-modal-list, .checkbox-text span, .img1-text, .social-list__link, .foot-social-link {
+.header-conteiner, .header-logo, .header-list, .button-modal-list, .checkbox-text span, .img1-text, .social-list__link, .foot-social-link {
   display: flex;
   align-items: center;
 }
@@ -91,6 +91,10 @@ button {
 
 .header:focus, .header:hover {
   border-color: #2196f3;
+}
+
+.header-conteiner {
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
