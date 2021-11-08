@@ -143,7 +143,7 @@ button {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-list {
     display: none;
   }
@@ -184,7 +184,7 @@ button {
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-top-adr {
     display: none;
   }
